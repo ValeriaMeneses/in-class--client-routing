@@ -1,0 +1,115 @@
+@import "./mixins/_circle-element.scss";
+
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-family: 'Palatino', 'Georgia', serif;
+}
+
+$txt-color: #fff;
+
+
+body {
+	margin: 0;
+	font-size: 1.3rem;
+}
+
+.page{
+	min-height: 100vh;
+}
+
+.page__inner-container{
+	padding: 30px;
+	background: #fff;
+	min-height: 100vh;
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+.page--home{
+	background: #9C27B0;
+}
+
+.page--cv{
+	background: #3F51B5;
+}
+
+.page--friends{
+	background: #673AB7;
+}
+
+.page h1{
+	margin-top: 0;
+	text-align: right;
+	border-bottom: 1px solid #aaa;
+}
+
+.user-card{
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.user-card__title{
+	font-size: 1.75rem;
+	font-weight: 200;
+	text-align: center;
+}
+
+.user-card__info{
+	padding: 0;
+	list-style-type: none;
+}
+
+.user-card__info li{
+	line-height: 50px;
+}
+.user-card__info span{
+	color: #aaa;
+	font-size: 40px;
+	width: 50px;
+	line-height: 50px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	vertical-align: bottom;
+}
+
+.friends-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.friend-card{
+	width: 32%;
+	padding: 20px;
+	border: 1px solid #D1C4E9;
+	margin-bottom: 15px;
+}
+
+
+.friend-card h4{
+	font-size: 20px;
+	margin-bottom: 0;
+	color: #7E57C2;
+	word-wrap: break-word;
+}
+
+.friend-card span{
+	color: #888;
+	background: #651FFF;
+	color: #eee;
+	padding: 10px;
+}
+
+.friend-card h5{
+}
+
+.friend-card img{
+	width: 100%;
+	background: #ddd;
+	border-radius: 50%;
+}
